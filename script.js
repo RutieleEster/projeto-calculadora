@@ -1,37 +1,51 @@
+const divResultado = document.getElementById('resultado');
+const textoResultado = document.getElementById('textoResultado');
+
 function calcular(operacao) {
     const n1 = parseFloat(document.getElementById('num1').value);
     const n2 = parseFloat(document.getElementById('num2').value);
-    const display = document.getElementById('displayResultado');
 
-    // se não digitar os números vai avisar
+    // se não digitar nada, avisa o usuário
     if (isNaN(n1) || isNaN(n2)) {
-        display.innerHTML = "Digite os números!";
-        display.style.color = "red";
+        alert("Por favor, preencha os dois números!");
         return;
     }
 
-    display.style.color = "black";
-    let resultado;
+    let resultadoFinal;
 
-   
-    if (operacao == 1) {
-        resultado = n1 + n2; // Soma
-    } else if (operacao == 2) {
-        resultado = n1 - n2; // Subtração
-    } else if (operacao == 3) {
-        // Trava para divisão por zero
-        resultado = n2 !== 0 ? (n1 / n2) : "Erro: Div. 0";
-    } else if (operacao == 4) {
-        resultado = n1 * n2; // Multiplicação
+    // Lógica das 4 operações
+    if (operacao === 1) {
+        resultadoFinal = n1 + n2; // Soma
+    } 
+    else if (operacao === 2) {
+        resultadoFinal = n1 - n2; // Subtração
+    } 
+    else if (operacao === 3) {
+        // Verificação para não dividir por zero
+        if (n2 === 0) {
+            resultadoFinal = "Erro: Divisão por 0";
+        } else {
+            resultadoFinal = n1 / n2;
+        }
+    } 
+    else if (operacao === 4) {
+        resultadoFinal = n1 * n2; // Multiplicação
     }
 
     //resultado
-    display.innerHTML = typeof resultado === 'number' ? resultado.toFixed(2) : resultado;
+    if (typeof resultadoFinal === 'number') {
+        textoResultado.textContent = "Resultado: " + resultadoFinal.toFixed(2);
+    } else {
+        textoResultado.textContent = resultadoFinal;
+    }
+
+    // Mostra a div de resultado
+    divResultado.classList.remove('hidden');
 }
 
 function limpar() {
     document.getElementById('num1').value = "";
     document.getElementById('num2').value = "";
-    document.getElementById('displayResultado').innerHTML = "Aguardando...";
-    document.getElementById('displayResultado').style.color = "black";
+    divResultado.classList.add('hidden');
+    textoResultado.textContent = "Aguardando...";
 }
