@@ -10,7 +10,7 @@ body {
     margin: 0 auto; 
     background-color: White;
     padding: 20px;
-    border: 2px solid Plum; 
+    border: 2px; 
     border-radius: 10px;
     text-align: center;
 }
