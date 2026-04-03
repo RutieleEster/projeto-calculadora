@@ -1,32 +1,33 @@
 body {
-    background-color: #f3e5f5; 
+    background-color: Lavender; 
     font-family: Arial, sans-serif;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; 
     margin: 0;
 }
 
 .container {
     max-width: 300px;
     width: 100%;
-    background-color: white;
+    background-color: White;
     padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px;
     text-align: center;
-    border: 1px solid #e1bee7; 
+    border: 1px solid Thistle; 
 }
 
 h1 {
-    color: #4a148c; 
-    font-size: 24px;
+    color: Indigo; 
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
 p {
-    color: #7b1fa2;
+    color: DarkOrchid; 
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -35,8 +36,8 @@ p {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ce93d8;
-    border-radius: 5px;
+    border: 1px solid Plum;
+    border-radius: 8px;
     box-sizing: border-box; 
     text-align: center;
 }
@@ -50,23 +51,23 @@ p {
 
 .btn-op {
     padding: 12px;
-    background-color: #7b1fa2; 
-    color: white;
+    background-color: DarkMagenta; 
+    color: White;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
 }
 
 .btn-op:hover {
-    background-color: #4a148c;
+    background-color: Indigo;
 }
 
 .btn-limpar {
     margin-top: 15px;
     background: none;
-    color: #6a1b9a;
+    color: DarkSlateBlue;
     border: none;
     text-decoration: underline;
     cursor: pointer;
@@ -79,8 +80,8 @@ p {
 #resultado {
     margin-top: 20px;
     padding: 15px;
-    background-color: #e1bee7;
-    border-radius: 5px;
-    color: #4a148c;
+    background-color: Thistle;
+    border-radius: 8px;
+    color: Indigo;
     font-weight: bold;
 }
