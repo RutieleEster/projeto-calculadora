@@ -1,0 +1,74 @@
+/* Estilo igual ao da média, mas com toque roxo */
+.container {
+    max-width: 300px;
+    margin: 80px auto; /* Aumentei um pouco a margem para descer na tela */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 2px solid #e1bee7; /* Roxo clarinho */
+    border-radius: 15px;
+    background-color: #f3e5f5; /* Fundo suave */
+}
+
+h1 {
+    color: #4a148c; /* Roxo escuro */
+    font-size: 22px;
+}
+
+p {
+    color: #7b1fa2;
+    font-size: 14px;
+}
+
+.campo-grupo input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ce93d8;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+.botoes-operacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dois botões por linha */
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.btn-op {
+    padding: 10px;
+    background-color: #7b1fa2; /* Roxo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-op:hover {
+    background-color: #4a148c;
+}
+
+.btn-limpar {
+    margin-top: 15px;
+    background: none;
+    color: #6a1b9a;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* O segredo para o resultado começar escondido */
+.hidden {
+    display: none;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d1c4e9; /* Roxo claro de destaque */
+    border-radius: 5px;
+    color: #4a148c;
+    font-weight: bold;
+}
