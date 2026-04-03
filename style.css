@@ -1,63 +1,42 @@
 body {
     background-color: Lavender; 
     font-family: Arial, sans-serif;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
     margin: 0;
+    padding-top: 100px; 
 }
 
 .container {
-    max-width: 300px;
-    width: 100%;
+    width: 300px; 
+    margin: 0 auto; 
     background-color: White;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px;
+    padding: 20px;
+    border: 2px solid Plum; 
+    border-radius: 10px;
     text-align: center;
-    border: 1px solid Thistle; 
 }
 
 h1 {
-    color: Indigo; 
-    font-size: 22px;
+    color: Indigo;
+    font-size: 20px;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
     margin-bottom: 10px;
-}
-
-p {
-    color: DarkOrchid; 
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.campo-grupo input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid Plum;
-    border-radius: 8px;
-    box-sizing: border-box; 
-    text-align: center;
-}
-
-.botoes-operacoes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 15px;
+    border: 1px solid Thistle;
+    border-radius: 5px;
 }
 
 .btn-op {
-    padding: 12px;
-    background-color: DarkMagenta; 
+    width: 45%; 
+    margin: 2px;
+    padding: 10px;
+    background-color: DarkMagenta;
     color: White;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
 .btn-op:hover {
@@ -66,7 +45,7 @@ p {
 
 .btn-limpar {
     margin-top: 15px;
-    background: none;
+    background-color: transparent;
     color: DarkSlateBlue;
     border: none;
     text-decoration: underline;
@@ -78,10 +57,10 @@ p {
 }
 
 #resultado {
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 15px;
+    padding: 10px;
     background-color: Thistle;
-    border-radius: 8px;
     color: Indigo;
     font-weight: bold;
+    border-radius: 5px;
 }
